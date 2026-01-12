@@ -41,19 +41,18 @@ int ikili_arama(int dizi[], int BOYUT, int search, int ilk_ind, int son_ind) {
 		return ikili_arama(dizi, BOYUT, search, ilk_ind, orta_ind-1);
 	}
 }
-
 int main() {
 	int A[] = {45, 12, 89, 3, 22, 10, 77, 56, 34, 15};
 	int N = sizeof(A) / sizeof(A[0]);
 	int aranan, sonuc;
 	
-	printf("--- ORIJINAL DIZI ---\n");
+	printf("-------- orijinal dizi --------\n");
 	dizi_yazdir(A, N);
 	printf("\n");
 
 	arayaeklemeli_sirala(A, N);
 	
-	printf("\n--- SIRALANMIS DIZI ---\n");
+	printf("\n------- siralanmis dizi -------\n");
 	dizi_yazdir(A, N);
 	
 	printf("\nAramak istediginiz deger: ");
